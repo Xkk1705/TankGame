@@ -14,7 +14,7 @@ public class DrawCircle extends JFrame {//JFrame 对应窗口
         //初始化面板
         mp = new MyPanel();
         this.add(mp);
-        this.setSize(400,300);
+        this.setSize(400, 300);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // 释放资源
         this.setVisible(true);
 
@@ -26,6 +26,6 @@ class MyPanel extends JPanel {
     @Override
     public void paint(Graphics g) {
         super.paint(g);
-        g.drawOval(10,10,100,100);  //第一次自动调用
+        g.drawOval(10, 10, 100, 100);  //第一次自动调用
     }
 }

@@ -33,23 +33,23 @@ class MyPanel extends JPanel implements KeyListener {
     //输入字符时触发
     @Override
     public void keyTyped(KeyEvent e) {
-        System.out.println((char) e.getKeyCode()+"被按下");
-//        if (e.getKeyCode() == KeyEvent.VK_DOWN){
-//            y++;
-//        }else if (e.getKeyCode() == KeyEvent.VK_UP) {
-//            y--;
-//        }else if (e.getKeyCode() == KeyEvent.VK_RIGHT){
-//            x++;
-//        }else if (e.getKeyCode() == KeyEvent.VK_LEFT){
-//            x--;
-//        }
-
-        this.repaint(); //重绘面板
 
     }
 
     @Override
     public void keyPressed(KeyEvent e) {
+//        System.out.println((char) e.getKeyCode()+"被按下");
+        if (e.getKeyCode() == KeyEvent.VK_DOWN){
+            y++;
+        }else if (e.getKeyCode() == KeyEvent.VK_UP) {
+            y--;
+        }else if (e.getKeyCode() == KeyEvent.VK_RIGHT){
+            x++;
+        }else if (e.getKeyCode() == KeyEvent.VK_LEFT){
+            x--;
+        }
+
+        this.repaint(); //重绘面板
 
     }
 
